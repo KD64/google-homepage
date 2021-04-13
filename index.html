@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <style>
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form {
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+    }
     ul {
+        display: flex;
         list-style-type: none;
-        margin: 0;
         padding: 0;
     }
+    .footer {
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+    }
+    .header {
+        overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+    }
+   
+    .right{
+        float:right;
+        padding: 10px;
+    }
+    .left{
+        float:left;
+        padding: 10px;
+    }
 </style>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -13,19 +45,29 @@
     </head>
     <body>
         <!--mess goes here-->
-            <ul>
-                <li>About</li>
-                <li>Store</li>
-                <li>Gmail</li>
-                <li>Images</li>
-            </ul>
-            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
-            <form action="https://www.google.co.uk/">
-                <input type="text" placeholder="Search the web?">
+            <div class="header">
+                <a class="left" href="https://github.com/KD64/google-homepage">About</a>
+                <a class="left" href="https://github.com/KD64/google-homepage">Store</a>
+                <a class="right" href="https://github.com/KD64/google-homepage">Images</a>
+                <a class="right" href="https://github.com/KD64/google-homepage">Gmail</a>
+            </div>
+            
+                <img style="padding-top:109px" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google logo">
+                <div class="for" style="padding-left:40%;">
+                <form action="https://www.google.co.uk/">
+                    <input type="text" placeholder="Search the web?">  
+                </form>
                 <button type="submit">Google Search</button>
-            </form>
-            <button type="button">Out all night to get lucky?</button>
-            </body>
-
+                    <button type="button">Out all night to get lucky?</button>
+                </div>
+            
+            <div class="footer">
+                    <a class="left" href="https://github.com/KD64/google-homepage">Advertising</a>
+                    <a class="left" href="https://github.com/KD64/google-homepage">Business</a>
+                    <a class="left" href="https://github.com/KD64/google-homepage">How Search works</a>
+                    <a class="right" href="https://github.com/KD64/google-homepage">Setttings</a>
+                    <a class="right" href="https://github.com/KD64/google-homepage">Terms</a>
+                    <a class="right" href="https://github.com/KD64/google-homepage">Privacy</a>
+            </div>
     </body>
     </html>
